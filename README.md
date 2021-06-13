@@ -10,8 +10,29 @@ roslaunch map_switcher map_switcher.launch
 
 Either of the following commands will switch the map
 ```
-rosservice call /map_switcher/change_map elevator_1 map_floor0
+cd ~/catkin_ws
 ```
+
 ```
-rosservice call /map_switcher/change_map elevator_1 map_floor2
+rosservice call /map_switcher/change_map elevator_1 map1
+```
+
+```
+rosservice call /map_switcher/change_map elevator_1 map2
+```
+
+```
+rosservice call /map_switcher/change_map elevator_1 map3
+```
+
+```
+rosservice call /map_switcher/change_map elevator_1 map4
+```
+
+```
+rosservice call /map_switcher/change_map elevator_1 map5
+```
+
+```
+rosservice call /map_switcher/change_map elevator_1 map6
 ```
