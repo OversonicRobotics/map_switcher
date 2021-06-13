@@ -6,4 +6,6 @@
     <node name="map_switcher" pkg="map_switcher" type="switch_maps" args="$(find map_switcher)/config/" output="screen">
         <rosparam command="load" file="$(arg config_file)" />
     </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_switcher)/rviz/map_switcher.rviz"/>
 </launch>
