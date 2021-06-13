@@ -1,0 +1,36 @@
+default_map: map1
+building: tukuba
+maps:
+  - map1
+  - map2
+  - map3
+  - map4
+  - map5
+  - map6
+wormholes:
+  elevator_1:
+    connected_locations:
+      map1:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 0
+      map2:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 2
+      map3:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 0
+      map4:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 2
+      map5:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 0
+      map6:
+        position: [0.0 ,0.0]
+        orientation: 0.0
+        floor: 2

@@ -9,5 +9,4 @@ if __name__ == '__main__':
 
     switcher = MapSwitcher('$(find map_switcher)/config/')
 
-
     rospy.spin()

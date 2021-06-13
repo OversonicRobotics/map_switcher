@@ -40,7 +40,6 @@ class MapSwitcher(object):
 
         rospy.loginfo("Initialized map_switcher")
 
-
     def handle_map_req(self, req):
         rospy.loginfo("Received request to switch to %s map" % req.new_map)
         reply = SwitchMapResponse()
@@ -81,6 +80,5 @@ class MapSwitcher(object):
         reply.estimated_pose.pose.pose.orientation.w = orientation[3]
 
         reply.estimated_pose.pose.covariance = [0.0]*36
-
 
         return reply
