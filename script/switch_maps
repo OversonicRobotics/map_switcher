@@ -7,6 +7,7 @@ from map_switcher.change_maps import MapSwitcher
 if __name__ == '__main__':
     rospy.init_node('map_switcher', anonymous=True)
 
-    switcher = MapSwitcher('$(find map_switcher)/config/')
+    # switcher = MapSwitcher('$(find map_switcher)/config/')
+    switcher = MapSwitcher('/nav/maps/config/')
 
     rospy.spin()
