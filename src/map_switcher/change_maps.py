@@ -49,7 +49,8 @@ class MapSwitcher(object):
             rospy.logerr("This map was not specified in the config file. Aborting...")
             return reply
 
-        if not self.wormholes.has_key(req.entry_wormhole):
+        if req.entry_wormhole not in self.wormholes:
+        #if not self.wormholes.has_key(req.entry_wormhole):
             reply.success = False
             rospy.logerr("This wormhole was not specified in the config file. Aborting...")
             return reply
