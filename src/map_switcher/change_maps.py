@@ -50,7 +50,6 @@ class MapSwitcher(object):
             return reply
 
         if req.entry_wormhole not in self.wormholes:
-        #if not self.wormholes.has_key(req.entry_wormhole):
             reply.success = False
             rospy.logerr("This wormhole was not specified in the config file. Aborting...")
             return reply
@@ -61,7 +60,7 @@ class MapSwitcher(object):
         map_name = req.new_map
         wormhole = req.entry_wormhole
 
-        #TODO robustly handle directories /
+        # TODO robustly handle directories /
         args = join(self.map_dir, self.building_name, map_name + '/map.yaml')
 
         node = roslaunch.core.Node(self.package, self.executable, name='map_server', args=args)
