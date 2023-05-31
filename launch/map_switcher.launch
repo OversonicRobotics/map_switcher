@@ -4,9 +4,9 @@
 <!--    <arg name="config_file" default="$(find map_switcher)/config/config_brsu.yaml"/>-->
     <arg name="config_file" default="/nav/maps/config/config.yaml"/>
 
-    <node name="map_switcher" pkg="map_switcher" type="switch_maps" args="$(find map_switcher)/config/" output="screen">
+    <node name="map_switcher" pkg="map_switcher" type="switch_maps" output="screen">
         <rosparam command="load" file="$(arg config_file)" />
     </node>
 
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_switcher)/rviz/map_switcher.rviz"/>
+<!--    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find map_switcher)/rviz/map_switcher.rviz"/>-->
 </launch>
